@@ -1,0 +1,214 @@
+.global {
+    margin-top: 50px;
+    height: 30%;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    background: white;
+    margin-bottom: 50px;
+}
+
+.creation {
+    margin-top: 50px;
+    height: 30%;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    background: white;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.principal {
+    display: flex;
+    justify-content: space-around;
+    width: 95%;
+    background-color: #c8c4c4;
+}
+
+.formulaire {
+    text-align: center;
+}
+
+span {
+    margin-left: -160px;
+    font-weight: bolder;
+}
+
+img {
+    margin-left: 50px;
+}
+
+label {
+    font-weight: bolder;
+    width: 50%;
+}
+
+input {
+    padding: 5px;
+}
+
+.connexion {
+    color: rgb(255, 255, 255);
+    padding: 7px;
+    background-color: #164194;
+    border-radius: 10px;
+}
+
+.connexion:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+.creer:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+.creer {
+    color: rgb(255, 255, 255);
+    padding: 7px;
+    background-color: #164194;
+    border-radius: 10px;
+}
+
+
+}
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    justify-content: center;
+    align-items: center;
+}
+header {
+    height: 10%;
+    width: 95%;
+    display: flex;
+    justify-content: flex-start;
+    background: white;
+    font-weight: bold;
+}
+.logo {
+    display: inline-block;
+    margin-top: 2%;
+    margin-right: 2%
+}
+.search {
+    height: 30px;
+    width: 30%;
+    border: solid;
+    border-color: rgba(240, 67, 67, 1);
+    border-radius: 7px;
+    margin-top: 4%;
+    margin-left: 15%;
+    padding: 5px;
+}
+.search p {
+    opacity: 50%;
+    margin-top: 1%;
+    text-decoration: none;
+}
+.loupe {
+    margin-bottom: 80px;
+    margin-left: 95%;
+}
+.livraison {
+    margin-top: 4%;
+    margin-left: 10%;
+    align-items: center;
+}
+.login {
+    margin-top: 4%;
+    margin-left: 10%;
+    text-align: center;
+    align-self: center;
+}
+.panier {
+    margin-top: 4%;
+    margin-left: 10%;
+    text-align: center;
+}
+.nav {
+    display: flex;
+    height: 60px;
+    width: 95%;
+    background-color: rgba(240, 67, 67, 1);
+    color: white;
+    justify-content: space-around;
+    padding-top: 30px;
+    font-weight: bold;
+}
+.nav2 {
+    height: 10%;
+    width: 95%;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-size: 20px;
+    background-color: white;
+    font-weight: bold;
+}
+.p1 {
+    text-align: center;
+}
+.p1:hover {
+    font-size: 24px;
+}
+.p2:hover {
+    font-size: 24px;
+}
+.p3 {
+    text-align: center;
+}
+.p3:hover {
+    font-size: 24px;
+}
+footer {
+    border: solid;
+    border-color: rgba(61, 56, 56, 1);
+    width: 95%;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-size: 20px;
+    background-color: white;
+    font-weight: bold;
+}
+.decouvrir:hover {
+    background-color: #22a7f0;
+}
+.homme:hover {
+    font-size: 24px;
+    color: #5473CC;
+}
+.femme:hover {
+    font-size: 24px;
+    color: #B31ECA;
+}
+.enfant:hover {
+    font-size: 24px;
+    color: #269376;
+}
+.marques:hover {
+    font-size: 24px;
+    color: #D8AC67;
+}
+.sport:hover {
+    font-size: 24px;
+    color: #D8D367;
+}
+.suivez {
+    line-height: 50px;
+    text-align: center;
+}
