@@ -1,0 +1,118 @@
+
+body{
+    margin:0;
+    padding:0;
+}
+
+#container{
+    margin:auto;
+    margin-top: 100px;
+    padding:20px;
+    border: 2px solid red;
+    justify-content: space-between;
+    margin: 50px;
+    display: flex;
+    align-items: flex-end;
+    width: 900px; 
+    margin: 150px;    
+}
+
+
+
+
+#Panier{
+    font-size: 40px;
+    border: 2px solid blue;
+    text-transform: uppercase;
+    width: 20%;
+    margin: 3%;
+    margin-left: 230px;
+    margin-bottom: -100px;
+    margin-top: 100px;
+}
+
+.Article{
+    width: 30%;
+}
+
+
+p{
+    font-size: 20px;
+    color: rgb(63, 62, 62);
+}
+
+
+
+h2{
+    margin-right: 100px;  
+}
+
+
+
+#quantité_produit{
+    padding: 5px 30px 5px 30px;
+}
+
+input{
+    width: 30px;
+   
+    text-align: center;
+}
+
+
+.Recapitulatif button{
+    padding: 10px 75px 10px 75px;
+    background: rgb(17, 131, 238);
+    border: none;
+    color: white;
+    font-size: 18px;  
+    margin-top: 40px;
+    
+}
+
+a{
+        text-decoration: none;
+        color: black;
+    }
+
+@media screen and (max-width: 775px){
+
+    #Panier{
+        font-size: 22px;
+        width: auto;
+         margin: 50px;  
+         margin-bottom:-100px;
+    }
+
+    
+
+    #container{
+        flex-wrap: wrap;
+    }
+
+    button{
+            padding: 8px 55px 8px 55px;
+            background: rgb(17, 102, 238);
+            border: none;
+            color: white;
+            font-size: 15px;  
+            
+    }
+     
+}
+
+
+
+@media screen and (max-width: 120px){
+
+    #Panier{
+        font-size: 25px;
+         margin: 145px;  
+         margin-bottom:-100px;
+    }
+
+    h2{
+        margin-right: 20px;
+        
+    }
+}

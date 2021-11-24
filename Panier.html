@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="Panier.css">
+    <title>chepa</title>
+</head>
+
+<body>
+
+    <div id='container'>
+        <div class="photo"><img src="basket.png"></div>
+        <div class="Article">
+            <h2>Nom produit: </h2>
+            <div class="montant">Prix: 100 € </div>
+            <p>Couleur:<br><br> Taille:
+                <br><br>
+            </p>
+
+
+
+            <button class="btn" onclick="productCount(false)"> - </button>
+            <input type="number" value="0" id="input">
+            <button class="btn" onclick="productCount(true)"> + </button>
+        </div>
+
+
+
+        <div class="Recapitulatif">
+            <button class="btn btn-buy" id='buy'>Commander</button>
+            <h1>Récapitulatif</h1>
+
+            <div class="container-produit">
+
+                <div class="Total">Total:<span id="total-price">0</span> € </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+    </div>
+
+
+    <script>
+        /* let prix = 100;
+
+                                        function productCount(product) {
+                                            inputBtn = document.getElementById('input').value;
+                                            let newInputBtn = parseInt(inputBtn);
+                                            let total = newInputBtn;
+
+
+
+                                            if (product == 1) {
+                                                total = newInputBtn + 1;
+                                            } else
+                                            if (product == false && newInputBtn > 0) {
+                                                total = newInputBtn - 1;
+                                            }
+                                            document.getElementById('input').value = total;
+                                        }
+
+                                        const buyBtn = document.getElementById('buy');
+                                        buyBtn.addEventListener('click', function() {
+                                                //const inputBtn= getElementById('input').value;
+
+                                                let newInputBtn = parseInt(inputBtn);
+
+                                                let total = newInputBtn + prix;
+                                                document.getElementById("total-price").innerHTML = total;
+
+
+                                            }) */
+
+        var prix = 100;
+
+        function productCount(product) {
+            //On va directement parser la valeur recupérer en int, pas la peine de créer une variable en plus
+            let inputBtn = parseInt(document.getElementById('input').value);
+            //On verifie que le nombre est toujours supérieur à 0 (on ne veut pas de valeur negative)
+            if (inputBtn >= 0) {
+                //On fait une simple addition pour incrementer ou decrementer
+                //(-1)+2=1 / 1+1=1
+                let total = product + inputBtn;
+                //On gère le cas -1
+                if (total < 0) {
+                    total = 0;
+                }
+                //On affiche la valeur dans le formulaire
+                document.getElementById('input').value = total;
+
+            }
+        }
+
+        //Les variable de type const/CONSTANTE sont faite pour ne pas changer, si on veut ajouter un listener il est preferable d'utiliser var ou sinon let si on veut créer une variable à duré de vie limité
+        var buyBtn = document.getElementById('buy');
+        buyBtn.addEventListener('click', function() {
+            //Dans cet evenement on ne peux pas utiliser des variables déclarer dans un autre contexte
+            //la variable "inputBtn" est declaré à l'intérieur de la fonction "productCount", elle ne vie qu'à l'intérieur
+            //Du coup on la redéclare ici
+            //Ce n'est pas une mauvaise pratique de faire comme ça
+            let inputBtn = parseInt(document.getElementById('input').value);
+
+            //Multiciplication plutot qu'addition, on veut le prix de l'article x fois le nombre d'article
+            // nbArticle * prix = prixTotal
+            //On essaie de declarer le moins de variable possible, si une variable n'est utilisé qu'unne fois alors c'est quelle ne doit pas être declaré
+            document.getElementById("total-price").innerHTML = inputBtn * prix;
+
+
+        })
+    </script>
+
+</body>
+
+</html>

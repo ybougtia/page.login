@@ -1,0 +1,235 @@
+
+
+header{
+display:flex;
+width: 100%;
+height: 50px;
+align-items: center;
+justify-content: space-around;
+}
+
+.logo{
+display:flex;
+margin-left: 5%;
+width:10% ;
+}
+.nouveau{
+    display:flex;
+    gap: 20px;
+    margin-left: 5%;
+    font-size: 150%;
+    font-weight: 5;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.recherche{
+    display:flex;
+    background-color:#C4C4C4;
+    width: 14%;
+    column-gap: 3%;
+    height: 56%;
+    align-items: center;
+    border-radius: 6px;
+}
+.rec{
+display: flex;
+padding-left: 1%;
+font-size: 150%;
+font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-weight: 5;
+}
+.loupe{
+    display: flex;
+    width: 13%;
+}
+
+.panier{
+    display:flex;
+    width: 5%;
+    padding-left: 1%;
+  
+}
+.nike{
+display: flex;
+padding-left: 15%;
+padding-top: 10%;
+}
+.prix{
+    display: flex;
+    font-weight: 350;
+    font-size: 200%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-left: 14%;
+    width: 100%;
+    padding-top: 6%;
+}
+.pointure{
+display: flex;
+width :172%;
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-weight: 5;
+font-size: 150%;
+padding-top:15% ;
+padding-left: 14%;
+column-gap: 1%;
+
+}
+.pointur{
+    display: flex;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 5;
+    font-size: 150%;
+    padding-left: 14%;
+    padding-top: 2%;
+  
+    
+}
+.demi{
+width: 4.5%;
+background-color: #C4C4C4;
+display: flex;
+}
+.carr{
+width: 4%;
+background-color: white;
+}
+.car{
+width: 8%;
+background-color: #C4C4C4;
+}
+
+.shop{
+display: flex;
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-size: 150%;
+font-weight: 100;
+margin-left: 20%;
+box-shadow: 1px 1px 1px black; 
+margin-top: 8%;
+border-radius: 7px;
+}
+.carre{
+display: flex;
+width:2.5%;
+background-color: #C4C4C4;
+}
+.coeur{
+display: flex;
+margin-left: 71%;
+margin-top: -5%;
+}
+* {
+    box-sizing: border-box;
+  }
+  
+  .popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+
+  }
+  
+  .popup.active {
+    display: inline-block;
+    background-color: rgb(0, 0,0,0.4);
+  }
+  
+  .popup-content {
+    position: fixed;
+    left: 50%;
+    top: 5%;
+    transform: translateX(-50%);
+    height: 34%;
+    width: 49%;
+    border: 1px solid rgb(22, 22, 22);
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    transition: top 250ms linear, opacity 200ms linear;
+    background-color:white;
+    justify-content: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  
+  .popup-content.active {
+    opacity: 1;
+    top: 28% !important;
+  }
+  .btn-close {
+    cursor: pointer;
+    font-size: 18px;
+  }
+  .popup-header {
+    display: flex;
+    width: 100%;
+    height: 10%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2%;
+ font-size: 124%;
+  }
+  .popup-body {
+    height: 88%;
+    padding: 2%;
+    overflow-y: auto;
+    background-color: rgba(238, 238, 238, 0.726);
+    display: flex;
+  }
+.partie-gauche{
+display: flex;
+flex-direction: column;
+width: 50%;
+align-items: center;
+
+}
+.partie-droite{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:45%;
+    padding-top: 2%;
+    justify-content: space-around;
+}
+.gauche-photo{
+display: flex;
+padding-left: 22%;
+padding-top: 11%;
+width: 143%;
+}
+.gauche-paire{
+    display: flex;
+  
+    }
+    .gauche-prix{
+display: flex;
+
+
+    }
+    .gauche-pointure{
+display: flex;
+
+    }
+    .droite-titre{
+display: flex;
+font-weight: 700;
+    }
+.droite-coût{
+    display: flex;
+     font-weight: 700;
+    }
+    a:visited {
+        color: #000000;
+      }
+      a {
+        outline: none;
+        text-decoration: none;}
+.partie-detail{
+display: flex;
+flex-direction: column;
+width: 20%;
+justify-content:space-around;
+padding-left: 4%;
+}

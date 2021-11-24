@@ -1,0 +1,224 @@
+/* {
+    margin: 0px;
+    padding: 0px;
+}
+
+*/
+
+body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    height: 10%;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+.logo {
+    display: inline-block;
+    margin-top: 2%;
+    margin-left: 2%;
+}
+
+.search {
+    display: flex;
+    width: 100%;
+}
+
+input {
+    height: 50px;
+    width: 50%;
+    border-color: rgba(240, 67, 67, 1);
+    margin-top: 4%;
+    margin-left: 25%;
+}
+
+button {
+    height: 57px;
+    width: 10%;
+    background-color: rgba(240, 67, 67, 1);
+    margin-top: 4%;
+    cursor: pointer;
+}
+
+.livraison {
+    margin-top: 3%;
+    margin-left: 10%;
+    text-align: center;
+}
+
+.login {
+    margin-top: 3%;
+    margin-left: 10%;
+    text-align: center;
+}
+
+.panier {
+    margin-top: 3%;
+    margin-left: 10%;
+    text-align: center;
+}
+
+.nav {
+    display: flex;
+    height: 60px;
+    width: 95%;
+    background-color: rgba(240, 67, 67, 1);
+    color: white;
+    justify-content: space-around;
+    padding-top: 30px;
+    font-weight: bold;
+}
+
+.principal {
+    background-image: url(https://static.nike.com/a/images/t_prod/w_1920,c_limit,f_auto,q_auto/ff77e5c3-8766-428b-a3e1-c05ffd452487/image.jpg);
+    width: 95%;
+    height: 1100px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+section h1 {
+    margin-right: 170px;
+    margin-top: 300px;
+    font-size: 45px;
+}
+
+section h2 {
+    margin-right: 300px;
+    margin-top: 10px;
+}
+
+.decouvrir {
+    background-color: black;
+    color: white;
+    height: 50px;
+    width: 150px;
+    border-radius: 10px;
+    margin-right: 280px;
+    margin-top: 150px;
+}
+
+.nav2 {
+    height: 10%;
+    width: 95%;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-size: 20px;
+    background-color: white;
+    font-weight: bold;
+}
+
+.p1 {
+    text-align: center;
+}
+
+.p1:hover {
+    font-size: 24px;
+}
+
+.p2:hover {
+    font-size: 24px;
+}
+
+.p3 {
+    text-align: center;
+}
+
+.p3:hover {
+    font-size: 24px;
+}
+
+footer {
+    border: solid;
+    border-color: rgba(61, 56, 56, 1);
+    width: 95%;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-size: 20px;
+    background-color: white;
+    font-weight: bold;
+}
+
+.decouvrir:hover {
+    background-color: #22a7f0;
+}
+
+.homme:hover {
+    font-size: 24px;
+    color: #5473CC;
+    cursor: pointer;
+}
+
+.femme:hover {
+    font-size: 24px;
+    color: #B31ECA;
+    cursor: pointer;
+}
+
+.enfant:hover {
+    font-size: 24px;
+    color: #269376;
+    cursor: pointer;
+}
+
+.marques:hover {
+    font-size: 24px;
+    color: #D8AC67;
+    cursor: pointer;
+}
+
+.sport:hover {
+    font-size: 24px;
+    color: #D8D367;
+    cursor: pointer;
+}
+
+.principal h1:hover {
+    font-size: 60px;
+    color: #1358AA;
+}
+
+.pub1 {
+    height: 10%;
+    width: 20%;
+    margin-right: 70%;
+    margin-top: -15%;
+    text-align: center;
+    font-weight: bold;
+    padding: 2px;
+    line-height: 50px;
+    border-radius: 10px;
+    font-size: 25px;
+}
+
+.n270 {
+    margin-bottom: 100%;
+    margin-top: -70%;
+    width: 140%;
+    margin-left: -10%;
+}
+
+.pub1 span {
+    font-size: 40px;
+    color: #1358AA;
+    font-style: italic;
+}
+
+.suivez {
+    line-height: 50px;
+    text-align: center;
+}
